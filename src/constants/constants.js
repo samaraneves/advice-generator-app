@@ -1,1 +1,1 @@
-export const ENDPOINT = `https://api.adviceslip.com/advice`
+export const ENDPOINT = 'https://api.adviceslip.com/advice'

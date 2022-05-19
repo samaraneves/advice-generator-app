@@ -1,29 +1,30 @@
+import { useEffect, useState } from 'react';
 import { getQuote } from './services/services';
-import { useEffect } from 'react';
+import HomeQuote from './pages/HomeQuote/index';
+import Button from './components/Button';
 
 function App() {
-  const quote = getQuote();
+  const [ quote, setQuote ] = useState()
+
+  function getNewQuote() {
+    const quoteAdvice = getQuote()
+    quoteAdvice.then(response => setQuote(response.data))
+  }
 
   useEffect(() => {
-    console.log(quote)
+    getNewQuote()
   }, [quote]);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <HomeQuote
+        id={quote.slip.id}
+        quote={quote.slip.advice} 
+      />
+      <Button
+        handleClick={getNewQuote}
+      />
+    </>
   );
 }
 
