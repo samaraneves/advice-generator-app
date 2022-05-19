@@ -11,7 +11,7 @@ const HomeQuote = ({ quote, id, handleClick }) => {
                 id={id} 
             />
             <Button 
-                onClick={handleClick}
+                handleClick={handleClick}
             />
         </S.MainHome>
     );

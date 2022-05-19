@@ -1,6 +1,6 @@
-import * as S from './style';
 import Image from '../Image';
 import { IconDice } from '../../images';
+import * as S from './style';
 
 const Button = ({handleClick}) => {
     return (
@@ -8,7 +8,6 @@ const Button = ({handleClick}) => {
             type="button"
             onClick={handleClick}
         >
-            {console.log(handleClick)}
             <Image 
                 path={IconDice}
                 altDescription="Icon Dice"

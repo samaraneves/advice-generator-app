@@ -10,6 +10,11 @@ export const Button = styled.button`
     padding: 1rem;
     background-color: var(--neon-green);
     border: 0;
+
+    &:focus,
+    &:hover {
+        cursor: pointer;
+    }
  
     &:focus {
         transition: 1s;
