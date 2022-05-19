@@ -8,6 +8,7 @@ const Button = ({handleClick}) => {
             type="button"
             onClick={handleClick}
         >
+            {console.log(handleClick)}
             <Image 
                 path={IconDice}
                 altDescription="Icon Dice"

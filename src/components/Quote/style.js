@@ -4,7 +4,7 @@ export const QuoteContainer = styled.div`
     width: 100%;
     min-width: 300px;
     max-width: 450px;
-    margin: 1rem;
+    margin: 0 1rem;
     padding: 2rem;
     border-radius: 1.5rem;
     background-color: var(--dark-grayish-blue);
@@ -19,6 +19,7 @@ export const QuoteContainer = styled.div`
 export const QuoteAdvice = styled.q`
     font-size: 30px;
     word-break: break-word;
+    line-height: 1.3;
 `
 
 export const QuoteAdviceNumber = styled.p`

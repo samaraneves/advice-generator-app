@@ -9,6 +9,6 @@ export const MainHome = styled.main`
     margin: 1rem;
 
     button {
-        margin: -3rem 0;
+        margin: -2rem 0;
     }
 `
